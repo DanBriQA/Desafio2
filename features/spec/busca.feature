@@ -1,5 +1,6 @@
 # language: pt
 
+@regressivo
 Funcionalidade: Buscas no Fake Ecommerce
   Como um cliente do site FakeEcommerce
   Gostaria de poder buscar por produtos
@@ -15,5 +16,5 @@ Funcionalidade: Buscas no Fake Ecommerce
 
   @busca_sem_resultados
   Cenário: Busca sem resultados
-    Quando não preencher o campo de busca
+    Quando buscar pelo produto ""
     Então devem ser retornado a mensagem "Please enter a search keyword"

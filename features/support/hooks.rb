@@ -1,8 +1,11 @@
 Before do
-  puts "Aqui executa antes!"
   @home_page = Pages::HomePage.new
   @search_page = Pages::SearchPage.new
   @login_page = Pages::LoginPage.new
+  @carrinho_page = Pages::CarrinhoPage.new
+  @cadastro_page = Pages::CadastroPage.new
+
+  page.driver.browser.manage.window.maximize
 end
 
 AfterStep do

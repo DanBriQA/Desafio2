@@ -8,16 +8,16 @@ Funcionalidade: Login no Ecommerce Fake
 
   @login
   Cenário: Realizar login
-    Dado que esteja na página de login
+    Dado que esteja na página de autenticação
     Quando submeter as credenciais com "danilo.tester@gmail.com" e "123456"
     Então deverá ser redirecionado para a MY ACCOUNT
 
   @tentativa_login
   Esquema do Cenario: Login com falha
 
-    Dado que esteja na página de login
+    Dado que esteja na página de autenticação
     Quando submeter as credenciais com "<email_input>" e "<senha_input>"
-    Então deverá apresentar a "<mensagem_output>"
+    Então deverá apresentar a mensagem de alerta: "<mensagem_output>"
 
     Exemplos:
       | email_input             | senha_input | mensagem_output            |
