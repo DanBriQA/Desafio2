@@ -3,7 +3,7 @@ Dado("que esteja na página inicial") do
 end
 
 Quando("buscar pelo produto {string}") do |query|
-  @home_page.search(query)
+  @search_page.search_product.search(query)
 end
 
 Então("devem ser retornados produtos") do
