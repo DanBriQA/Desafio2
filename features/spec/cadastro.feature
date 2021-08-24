@@ -15,6 +15,7 @@ Funcionalidade: Registrar no Ecommerce Fake
       | Danilo     | Brito     | pwd123   | Av. Armando Tavares | Salvador | California | 12345       | 71999999999  |
     Então deverá ser redirecionado para a MY ACCOUNT
 
+  
   @cadastro_sem_sucesso
   Esquema do Cenario: Tentativa de cadastro
 
@@ -36,3 +37,6 @@ Funcionalidade: Registrar no Ecommerce Fake
       | Danilo     | Brito     | pwd123   | Av. Armando Tavares | Salvador | California |             | 71999999999  | The Zip/Postal code you've entered is invalid. It must follow this format: 00000 |
       | Danilo     | Brito     | pwd123   | Av. Armando Tavares | Salvador | California | 12345       |              | You must register at least one phone number.                                     |
 
+
+
+      

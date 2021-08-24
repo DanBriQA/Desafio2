@@ -11,7 +11,7 @@ module Pages
     element :btn_sign_in, "#SubmitLogin"
     element :alert_message_authentication_failed, ".alert-danger"
 
-    def with(email, password)
+    def login_with(email, password)
       input_login_email.set(email)
       input_login_password.set(password)
       btn_sign_in.click

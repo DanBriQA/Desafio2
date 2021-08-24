@@ -38,7 +38,7 @@ module Sections
       years_birth.select "1994"
       company.set "Compasso UOL"
       address1.set user[:address]
-      address2.set Faker::Address.secondary_address
+      address2.set "Home"
       city.set user[:city]
       state.select user[:state]
       postal_code.set user[:postal_code]

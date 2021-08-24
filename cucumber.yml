@@ -1,5 +1,15 @@
-default: -p chrome -p html_report -p pretty
+---
+default: -p chrome -p html_report -p bdd -p hmg
 
 html_report: --format html --out=reports/report.html
+bdd: -f pretty
+dots: -f progress
+firefox: BROWSER=firefox
+fire_headless: BROWSER=fire_headless
 chrome: BROWSER=chrome
-pretty: --format pretty
+chrome_headless: BROWSER=chrome_headless
+hmg: CONFIG=hmg.yml
+prod: CONFIG=prod.yml
+
+
+

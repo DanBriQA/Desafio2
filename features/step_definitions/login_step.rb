@@ -3,7 +3,7 @@ Dado("que esteja na página de autenticação") do
 end
 
 Quando("submeter as credenciais com {string} e {string}") do |email, password|
-  @login_page.with(email, password)
+  @login_page.login_with(email, password)
 end
 
 Então("deverá ser redirecionado para a MY ACCOUNT") do
